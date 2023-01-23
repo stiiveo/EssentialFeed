@@ -70,7 +70,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
 		let response = anyHTTPURLResponse()
 		
 		let receivedValues = resultValuesFor(data: nil, response: response, error: nil)
-				let emptyData = Data()
+		let emptyData = Data()
 		
 		XCTAssertEqual(receivedValues?.data, emptyData)
 		XCTAssertEqual(receivedValues?.response.url, response.url)
@@ -80,7 +80,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
 	// MARK: - Helpers
 	
 	private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> HTTPClient {
-		let sut =  URLSessionHTTPClient()
+		let sut = URLSessionHTTPClient()
 		trackForMemoryLeaks(sut, file: file, line: line)
 		return sut
 	}
