@@ -25,6 +25,7 @@
 		8F9F4EC528E983190025930E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F4EC428E983190025930E /* FeedItem.swift */; };
 		8F9F4EC728E9838F0025930E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F4EC628E9838F0025930E /* FeedLoader.swift */; };
 		8F9F4ECB28E98A980025930E /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F4ECA28E98A980025930E /* LoadFeedFromRemoteUseCaseTests.swift */; };
+		8FED7D8E2983C38600A4EDAA /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED7D8D2983C38600A4EDAA /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8F9F4EC428E983190025930E /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		8F9F4EC628E9838F0025930E /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		8F9F4ECA28E98A980025930E /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		8FED7D8D2983C38600A4EDAA /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		8F9F4EB828E982D30025930E /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FED7D8C2983C36800A4EDAA /* Feed Cache */,
 				8F651FCD297D7BDD00951DD5 /* Feed API */,
 			);
 			path = EssentialFeedTests;
@@ -178,6 +181,14 @@
 				8F9F4EC628E9838F0025930E /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
+		8FED7D8C2983C36800A4EDAA /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				8FED7D8D2983C38600A4EDAA /* CacheFeedUseCaseTests.swift */,
+			);
+			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +360,7 @@
 				8F99275329836F2800782583 /* URLSessionHTTPClientTests+Helpers.swift in Sources */,
 				8F07CD10297E389C006CF78B /* URLSessionHTTPClientTests.swift in Sources */,
 				8F07CD13297E7566006CF78B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				8FED7D8E2983C38600A4EDAA /* CacheFeedUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
