@@ -1,5 +1,5 @@
 //
-//  RemoteFeedLoaderTests+Helpers.swift
+//  LoadFeedFromRemoteUseCaseTests+Helpers.swift
 //  EssentialFeedTests
 //
 //  Created by Jason Ou on 2023/1/27.
@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-extension RemoteFeedLoaderTests {
+extension LoadFeedFromRemoteUseCaseTests {
 	func expect(
 		_ sut: RemoteFeedLoader,
 		toCompleteWith expectedResult: RemoteFeedLoader.Result,
