@@ -9,10 +9,10 @@
 	✅ Error returns error (if applicable, e.g., invalid data)
 	✅ Error twice returns same error (if applicable, e.g., invalid data)
 	
-- Insert
+✅ Insert
 	✅ To empty cache stores data
 	✅ To non-empty cache overrides previous data with new data
-	- Error (if applicable, e.g., no write permission)
+	✅ Error (if applicable, e.g., no write permission)
 	
 - Delete
 	- Empty cache does nothing (cache stays empty and does not fail)
