@@ -162,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				8F928E672981029200AEB02E /* README.md */,
-				8F18BDFE298F5439001187AB /* FeedStore Implementation Requirements.md */,
 				8F9F4EAE28E982D30025930E /* EssentialFeed */,
 				8F9F4EB828E982D30025930E /* EssentialFeedTests */,
 				8F3AFDB9297F718100BDF402 /* EssentialFeedAPIEndToEndTests */,
@@ -233,6 +232,7 @@
 		8FED7D8C2983C36800A4EDAA /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				8F18BDFE298F5439001187AB /* FeedStore Implementation Requirements.md */,
 				8FC12F2E298BEEF900AD1076 /* Helpers */,
 				8FED7D8D2983C38600A4EDAA /* CacheFeedUseCaseTests.swift */,
 				8FC12F2C298BEC6D00AD1076 /* LoadFeedFromCacheUseCaseTests.swift */,
