@@ -19,4 +19,4 @@
 	✅ Non-empty cache leaves cache empty
 	✅ Error (if applicable, e.g., no delete permission)
 
-**Side-effects must run serially to avoid race-conditions**
+✅ Side-effects must run serially to avoid race-conditions
