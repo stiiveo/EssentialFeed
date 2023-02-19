@@ -12,6 +12,7 @@
 		8F6964FD299CD3680003145F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6964FB299CD3680003145F /* Main.storyboard */; };
 		8F6964FF299CD36A0003145F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6964FE299CD36A0003145F /* Assets.xcassets */; };
 		8F696502299CD36A0003145F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F696500299CD36A0003145F /* LaunchScreen.storyboard */; };
+		8F6FF08729A1DDCC00E468DE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FF08629A1DDCC00E468DE /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8F6964FE299CD36A0003145F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F696501299CD36A0003145F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F696503299CD36A0003145F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6FF08629A1DDCC00E468DE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8F6964F5299CD3680003145F /* AppDelegate.swift */,
 				8F6964F7299CD3680003145F /* SceneDelegate.swift */,
 				8F6964FB299CD3680003145F /* Main.storyboard */,
+				8F6FF08629A1DDCC00E468DE /* FeedViewController.swift */,
 				8F6964FE299CD36A0003145F /* Assets.xcassets */,
 				8F696500299CD36A0003145F /* LaunchScreen.storyboard */,
 				8F696503299CD36A0003145F /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F6964F6299CD3680003145F /* AppDelegate.swift in Sources */,
+				8F6FF08729A1DDCC00E468DE /* FeedViewController.swift in Sources */,
 				8F6964F8299CD3680003145F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
