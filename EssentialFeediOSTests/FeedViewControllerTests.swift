@@ -27,7 +27,9 @@ final class FeedViewController: UITableViewController {
     }
     
     @objc private func load() {
-        loader?.load { _ in }
+        loader?.load { [weak self] _ in
+            self?.refreshControl?.endRefreshing()
+        }
     }
 }
 
@@ -36,7 +38,7 @@ final class FeedViewControllerTests: XCTestCase {
     func test_init_doesNotLoadFeed() {
         let (_, loader) = makeSUT()
         
-        XCTAssertEqual(loader.loadCallCount, 0)
+        XCTAssertEqual(loader.completions.count, 0)
     }
     
     func test_viewDidLoad_loadsFeed() {
@@ -44,7 +46,7 @@ final class FeedViewControllerTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertEqual(loader.loadCallCount, 1)
+        XCTAssertEqual(loader.completions.count, 1)
     }
     
     func test_pullToRefresh_loadsFeed() {
@@ -52,10 +54,10 @@ final class FeedViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         
         sut.refreshControl?.simulatePullToRefresh()
-        XCTAssertEqual(loader.loadCallCount, 2)
+        XCTAssertEqual(loader.completions.count, 2)
         
         sut.refreshControl?.simulatePullToRefresh()
-        XCTAssertEqual(loader.loadCallCount, 3)
+        XCTAssertEqual(loader.completions.count, 3)
     }
     
     func test_viewDidLoad_showsLoadingIndicator() {
@@ -64,6 +66,15 @@ final class FeedViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         
         XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+    }
+    
+    func test_viewDidLoad_hidesLoadingIndicatorOnLoaderCompletion() {
+        let (sut, loader) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        loader.completeFeedLoading()
+        
+        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
     }
     
     // MARK: - Helper
@@ -77,10 +88,14 @@ final class FeedViewControllerTests: XCTestCase {
     }
     
     class LoaderSpy: FeedLoader {
-        private(set) var loadCallCount: Int = 0
+        private(set) var completions = [(FeedLoader.Result) -> Void]()
         
-        func load(completion: @escaping (LoadFeedResult) -> Void) {
-            loadCallCount += 1
+        func load(completion: @escaping (FeedLoader.Result) -> Void) {
+            completions.append(completion)
+        }
+        
+        func completeFeedLoading() {
+            completions[0](.success([]))
         }
     }
     
