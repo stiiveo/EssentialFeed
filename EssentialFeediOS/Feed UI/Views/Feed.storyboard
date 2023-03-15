@@ -11,7 +11,7 @@
         <!--Feed View Controller-->
         <scene sceneID="uln-uq-rLf">
             <objects>
-                <tableViewController id="RiV-dq-qIr" customClass="FeedViewController" customModule="Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RiV-dq-qIr" customClass="FeedViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aUt-am-Zfa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,19 +135,11 @@ Location</string>
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
-                            <action selector="refresh" destination="55E-RC-AIe" eventType="valueChanged" id="haH-fb-1ys"/>
+                            <action selector="refresh" destination="RiV-dq-qIr" eventType="valueChanged" id="n8N-mg-QcC"/>
                         </connections>
                     </refreshControl>
-                    <connections>
-                        <outlet property="refreshController" destination="55E-RC-AIe" id="smI-Fh-zeh"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUL-We-WcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="55E-RC-AIe" customClass="FeedRefreshViewController" customModule="EssentialFeediOS" customModuleProvider="target">
-                    <connections>
-                        <outlet property="view" destination="iRl-d9-vo1" id="CBX-aN-uiM"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="1341.2213740458014" y="-119.01408450704226"/>
         </scene>
