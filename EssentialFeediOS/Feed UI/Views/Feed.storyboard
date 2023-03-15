@@ -82,6 +82,9 @@ Location</string>
                                                                 <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="default"/>
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="60"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="Tqt-ER-PhC" eventType="touchUpInside" id="Szb-vG-385"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,6 +127,14 @@ Location</string>
                                         <constraint firstAttribute="bottomMargin" secondItem="W6X-dj-spk" secondAttribute="bottom" priority="999" constant="6" id="qyg-BH-K0a"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="ckc-Xe-5O2" id="zA6-kc-5lf"/>
+                                    <outlet property="feedImageContainer" destination="5gS-1y-N29" id="iNc-j0-SqA"/>
+                                    <outlet property="feedImageRetryButton" destination="IFz-7g-1Bh" id="MeW-4a-Wa1"/>
+                                    <outlet property="feedImageView" destination="jdi-J1-dDO" id="JFF-GW-qMR"/>
+                                    <outlet property="locationContainer" destination="c5D-Kl-ytp" id="Bxe-vO-hql"/>
+                                    <outlet property="locationLabel" destination="ELj-jZ-a9O" id="iFP-aS-rKf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

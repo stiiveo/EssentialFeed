@@ -320,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				8FA0F10C29BC662100406FD8 /* Controllers */,
-				8FA0F10329BC648E00406FD8 /* Helpers */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -463,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				8F6FF0A629A3A84000E468DE /* FeedViewControllerTests.swift */,
+				8FA0F10329BC648E00406FD8 /* Helpers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
