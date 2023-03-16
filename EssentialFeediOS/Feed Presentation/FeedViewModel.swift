@@ -8,5 +8,6 @@
 import EssentialFeed
 
 struct FeedViewModel {
+    let title: String
     let feed: [FeedImage]
 }

@@ -35,7 +35,7 @@ final class FeedPresenter {
     }
     
     func didFinishLoadingFeed(with feed: [FeedImage]) {
-        feedView.display(FeedViewModel(feed: feed))
+        feedView.display(FeedViewModel(title: "My Feed", feed: feed))
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
     
