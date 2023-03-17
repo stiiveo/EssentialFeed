@@ -472,11 +472,11 @@
 			isa = PBXGroup;
 			children = (
 				8FA0F10129BC555500406FD8 /* FeedUIComposer.swift */,
-				8F727DC929C4558A00EB74CD /* FeedLoaderPresentationAdapter.swift */,
 				8F727DC729C4554900EB74CD /* FeedImageLoaderPresentationAdapter.swift */,
-				8F727DC329C454AE00EB74CD /* WeakRefVirtualProxy.swift */,
-				8F727DC129C4533900EB74CD /* MainQueueDispatchDecorator.swift */,
+				8F727DC929C4558A00EB74CD /* FeedLoaderPresentationAdapter.swift */,
 				8F727DCB29C455C000EB74CD /* FeedViewAdapter.swift */,
+				8F727DC129C4533900EB74CD /* MainQueueDispatchDecorator.swift */,
+				8F727DC329C454AE00EB74CD /* WeakRefVirtualProxy.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
