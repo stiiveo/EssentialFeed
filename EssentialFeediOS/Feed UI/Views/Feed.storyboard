@@ -16,10 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="rQa-Ei-Nuv" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="j9f-DW-0Ah" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ry-dH-jPW">
+                                    <rect key="frame" x="0.0" y="8" width="393" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="1ry-dH-jPW" firstAttribute="top" secondItem="j9f-DW-0Ah" secondAttribute="top" constant="8" id="PEH-F0-8pQ"/>
+                                <constraint firstAttribute="trailing" secondItem="1ry-dH-jPW" secondAttribute="trailing" id="gLk-Tp-1wF"/>
+                                <constraint firstAttribute="bottom" secondItem="1ry-dH-jPW" secondAttribute="bottom" constant="8" id="kTr-h7-cYo"/>
+                                <constraint firstItem="1ry-dH-jPW" firstAttribute="leading" secondItem="j9f-DW-0Ah" secondAttribute="leading" id="oOf-Hs-bZE"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="1ry-dH-jPW" id="Dor-pK-1pV"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="zis-sY-S2E">
                             <rect key="frame" x="0.0" y="692" width="393" height="16"/>
@@ -151,7 +169,7 @@ Location</string>
                         </connections>
                     </refreshControl>
                     <connections>
-                        <outlet property="errorView" destination="rQa-Ei-Nuv" id="4wc-Oy-l7L"/>
+                        <outlet property="errorView" destination="j9f-DW-0Ah" id="DWt-7v-M44"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUL-We-WcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
