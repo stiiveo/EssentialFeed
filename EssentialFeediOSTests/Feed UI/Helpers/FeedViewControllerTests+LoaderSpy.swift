@@ -7,7 +7,6 @@
 
 import Foundation
 import EssentialFeed
-import EssentialFeediOS
 
 extension FeedUIIntegrationTests {
     
