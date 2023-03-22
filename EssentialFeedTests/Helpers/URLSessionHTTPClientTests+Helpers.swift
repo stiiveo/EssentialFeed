@@ -26,12 +26,7 @@ extension URLSessionHTTPClientTests {
 		
 		private static let queue = DispatchQueue(label: "URLProtocolStub.queue")
 		
-		static func startInterceptingRequest() {
-			URLProtocol.registerClass(URLProtocolStub.self)
-		}
-		
-		static func stopInterceptingRequest() {
-			URLProtocol.unregisterClass(URLProtocolStub.self)
+		static func removeStub() {
 			stub = nil
 		}
 		
