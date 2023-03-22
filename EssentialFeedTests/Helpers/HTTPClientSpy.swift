@@ -8,6 +8,10 @@
 import EssentialFeed
 
 class HTTPClientSpy: HTTPClient {
+    private struct Task: HTTPClientTask {
+        func cancel() {}
+    }
+    
 	private var messages = [(url: URL, completion: (HTTPClient.Result) -> Void)]()
 	
 	var requestedURLs: [URL] {
@@ -18,8 +22,10 @@ class HTTPClientSpy: HTTPClient {
 		messages.map { $0.completion }
 	}
 	
-	func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
+    @discardableResult
+	func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) -> HTTPClientTask {
 		messages.append((url, completion))
+        return Task()
 	}
 	
 	func complete(with error: Error, at index: Int = 0) {
