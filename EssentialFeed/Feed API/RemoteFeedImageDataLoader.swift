@@ -5,7 +5,7 @@
 //  Created by JasonOu on 2023/3/23.
 //
 
-public final class RemoteFeedImageDataLoader {
+public final class RemoteFeedImageDataLoader: FeedImageDataLoader {
     private let client: HTTPClient
     
     public init(client: HTTPClient) {
