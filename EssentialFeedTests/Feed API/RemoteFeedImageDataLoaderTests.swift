@@ -203,10 +203,6 @@ class RemoteFeedImageDataLoaderTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
-    private func anyData() -> Data {
-        return Data("any data".utf8)
-    }
-    
     private func nonEmptyData() -> Data {
         return Data("non-empty data".utf8)
     }
