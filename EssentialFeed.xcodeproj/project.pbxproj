@@ -386,7 +386,6 @@
 		8F6FF09229A20FB900E468DE /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				8FA0F0F629BC290000406FD8 /* Feed Image Loader */,
 				8FA0F0F929BC294800406FD8 /* Feed UI */,
 			);
 			path = EssentialFeediOS;
@@ -474,13 +473,6 @@
 				8FA0F0F729BC292600406FD8 /* FeedImageDataLoader.swift */,
 			);
 			path = "Feed Feature";
-			sourceTree = "<group>";
-		};
-		8FA0F0F629BC290000406FD8 /* Feed Image Loader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Image Loader";
 			sourceTree = "<group>";
 		};
 		8FA0F0F929BC294800406FD8 /* Feed UI */ = {
