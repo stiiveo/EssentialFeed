@@ -89,6 +89,8 @@
 		8FD6071629CBFC5000483514 /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6071529CBFC5000483514 /* RemoteFeedImageDataLoader.swift */; };
 		8FD6071929CC0A5000483514 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6071829CC0A5000483514 /* HTTPURLResponse+StatusCode.swift */; };
 		8FD6071C29CC0B8800483514 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6071B29CC0B8800483514 /* URLProtocolStub.swift */; };
+		8FD8C7F829CD418600BBEC49 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8C7F729CD418600BBEC49 /* LocalFeedImageDataLoader.swift */; };
+		8FD8C7FA29CD41CD00BBEC49 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8C7F929CD41CD00BBEC49 /* FeedImageDataStore.swift */; };
 		8FD8E73D298A48A100DD6F25 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8E73C298A48A100DD6F25 /* RemoteFeedItem.swift */; };
 		8FD8E73F298A48D100DD6F25 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8E73E298A48D100DD6F25 /* LocalFeedImage.swift */; };
 		8FE98FA329896BE0000FCD6F /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE98FA229896BE0000FCD6F /* LocalFeedLoader.swift */; };
@@ -232,6 +234,8 @@
 		8FD6071529CBFC5000483514 /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		8FD6071829CC0A5000483514 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		8FD6071B29CC0B8800483514 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		8FD8C7F729CD418600BBEC49 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
+		8FD8C7F929CD41CD00BBEC49 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		8FD8E73C298A48A100DD6F25 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		8FD8E73E298A48D100DD6F25 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		8FE98FA229896BE0000FCD6F /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
@@ -579,6 +583,8 @@
 				8FE98FA429896C8E000FCD6F /* FeedStore.swift */,
 				8FD8E73E298A48D100DD6F25 /* LocalFeedImage.swift */,
 				8F18BDFB298F39B7001187AB /* FeedCachePolicy.swift */,
+				8FD8C7F729CD418600BBEC49 /* LocalFeedImageDataLoader.swift */,
+				8FD8C7F929CD41CD00BBEC49 /* FeedImageDataStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -920,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD8C7F829CD418600BBEC49 /* LocalFeedImageDataLoader.swift in Sources */,
 				8FF05B4A299674D60025B16C /* CoreDataHelpers.swift in Sources */,
 				8F9F4EC728E9838F0025930E /* FeedLoader.swift in Sources */,
 				8F651FCC297D732200951DD5 /* FeedItemMapper.swift in Sources */,
@@ -935,6 +942,7 @@
 				8FE98FA329896BE0000FCD6F /* LocalFeedLoader.swift in Sources */,
 				8F651FCA297D72CF00951DD5 /* HTTPClient.swift in Sources */,
 				8F9F4EC528E983190025930E /* FeedImage.swift in Sources */,
+				8FD8C7FA29CD41CD00BBEC49 /* FeedImageDataStore.swift in Sources */,
 				8F412BEB29C95C7400BCE066 /* FeedPresenter.swift in Sources */,
 				8F07CD17297E8FFA006CF78B /* URLSessionHTTPClient.swift in Sources */,
 				8FD6071929CC0A5000483514 /* HTTPURLResponse+StatusCode.swift in Sources */,
