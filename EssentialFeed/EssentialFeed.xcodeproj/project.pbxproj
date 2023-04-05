@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F04A76829C1BAAE00EA4258 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F04A76729C1BAAE00EA4258 /* Feed.storyboard */; };
 		8F04A76A29C1BD9E00EA4258 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F04A76929C1BD9E00EA4258 /* Feed.xcassets */; };
 		8F04A76C29C1D06D00EA4258 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04A76B29C1D06D00EA4258 /* UITableView+Dequeueing.swift */; };
 		8F04A76E29C1D1E200EA4258 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F04A76D29C1D1E200EA4258 /* UIImageView+Animations.swift */; };
@@ -97,6 +96,7 @@
 		8FD8C7FA29CD41CD00BBEC49 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8C7F929CD41CD00BBEC49 /* FeedImageDataStore.swift */; };
 		8FD8E73D298A48A100DD6F25 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8E73C298A48A100DD6F25 /* RemoteFeedItem.swift */; };
 		8FD8E73F298A48D100DD6F25 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8E73E298A48D100DD6F25 /* LocalFeedImage.swift */; };
+		8FE629BC29DB10A400019A41 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F04A76729C1BAAE00EA4258 /* Feed.storyboard */; };
 		8FE98FA329896BE0000FCD6F /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE98FA229896BE0000FCD6F /* LocalFeedLoader.swift */; };
 		8FE98FA529896C8E000FCD6F /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE98FA429896C8E000FCD6F /* FeedStore.swift */; };
 		8FED7D8E2983C38600A4EDAA /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED7D8D2983C38600A4EDAA /* CacheFeedUseCaseTests.swift */; };
@@ -847,7 +847,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F04A76829C1BAAE00EA4258 /* Feed.storyboard in Resources */,
+				8FE629BC29DB10A400019A41 /* Feed.storyboard in Resources */,
 				8F04A76A29C1BD9E00EA4258 /* Feed.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
