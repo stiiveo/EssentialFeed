@@ -30,6 +30,7 @@
 		8F95520029CFF2900007F165 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9551FF29CFF2900007F165 /* XCTestCase+MemoryLeakTracking.swift */; };
 		8F95520229CFF3110007F165 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95520129CFF3110007F165 /* SharedTestHelpers.swift */; };
 		8FE629BF29DBCE8900019A41 /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE629BE29DBCE8900019A41 /* DebuggingSceneDelegate.swift */; };
+		8FE629C129DD1B0C00019A41 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		8F9551FF29CFF2900007F165 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		8F95520129CFF3110007F165 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		8FE629BE29DBCE8900019A41 /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
+		8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				8F9551FA29CEF01E0007F165 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				8F57310829D931F10038F184 /* FeedLoaderCacheDecoratorTests.swift */,
 				8F9551F629CEDFE80007F165 /* FeedLoaderWithFallbackCompositeTests.swift */,
+				8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */,
 				8F9551FE29CFF1A80007F165 /* Helpers */,
 			);
 			path = EssentialAppTests;
@@ -349,6 +352,7 @@
 				8F57310E29D938F80038F184 /* XCTestCase+FeedLoader.swift in Sources */,
 				8F9551FB29CEF01E0007F165 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				8F57311829D99C9D0038F184 /* XCTestCase+FeedImageDataLoader.swift in Sources */,
+				8FE629C129DD1B0C00019A41 /* SceneDelegateTests.swift in Sources */,
 				8F57311429D97F080038F184 /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */,
 				8F57311629D99BD40038F184 /* FeedImageDataLoaderSpy.swift in Sources */,
 				8F9551F729CEDFE80007F165 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
