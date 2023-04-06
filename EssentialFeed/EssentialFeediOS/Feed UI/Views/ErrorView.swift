@@ -18,13 +18,15 @@ public final class ErrorView: UIView {
     public override func awakeFromNib() {
         super.awakeFromNib()
         
+        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.textAlignment = .center
         buttonTitle = nil
         alpha = 0
     }
     
     private var buttonTitle: String? {
         get { button.titleLabel?.text }
-        set { button.titleLabel?.text = newValue }
+        set { button.setTitle(newValue, for: .normal) }
     }
     
     private var isVisible: Bool {
