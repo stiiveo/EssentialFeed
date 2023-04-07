@@ -20,8 +20,6 @@
 		8F9551C529CEDB910007F165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9551C329CEDB910007F165 /* Main.storyboard */; };
 		8F9551C729CEDB920007F165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9551C629CEDB920007F165 /* Assets.xcassets */; };
 		8F9551CA29CEDB920007F165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9551C829CEDB920007F165 /* LaunchScreen.storyboard */; };
-		8F9551F329CEDD3E0007F165 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F229CEDD3E0007F165 /* EssentialFeed.framework */; };
-		8F9551F529CEDD3E0007F165 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F429CEDD3E0007F165 /* EssentialFeediOS.framework */; };
 		8F9551F729CEDFE80007F165 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9551F629CEDFE80007F165 /* FeedLoaderWithFallbackCompositeTests.swift */; };
 		8F9551F929CEEDDC0007F165 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9551F829CEEDDC0007F165 /* FeedLoaderWithFallbackComposite.swift */; };
 		8F9551FB29CEF01E0007F165 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9551FA29CEF01E0007F165 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
@@ -47,6 +45,10 @@
 		8FBE1CFC29DD24C900743E46 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE1CFB29DD24C900743E46 /* FeedAcceptanceTests.swift */; };
 		8FE629C129DD1B0C00019A41 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */; };
 		8FFD970929DFFAEF000BAD37 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD970829DFFAEF000BAD37 /* UIView+TestHelpers.swift */; };
+		8FFD970A29E00707000BAD37 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F229CEDD3E0007F165 /* EssentialFeed.framework */; };
+		8FFD970B29E00707000BAD37 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F229CEDD3E0007F165 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FFD970D29E00709000BAD37 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F429CEDD3E0007F165 /* EssentialFeediOS.framework */; };
+		8FFD970E29E00709000BAD37 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F429CEDD3E0007F165 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,21 @@
 			remoteInfo = EssentialApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FFD970C29E00707000BAD37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FFD970B29E00707000BAD37 /* EssentialFeed.framework in Embed Frameworks */,
+				8FFD970E29E00709000BAD37 /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F57310829D931F10038F184 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
@@ -112,8 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F9551F329CEDD3E0007F165 /* EssentialFeed.framework in Frameworks */,
-				8F9551F529CEDD3E0007F165 /* EssentialFeediOS.framework in Frameworks */,
+				8FFD970A29E00707000BAD37 /* EssentialFeed.framework in Frameworks */,
+				8FFD970D29E00709000BAD37 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +245,7 @@
 				8F9551B629CEDB910007F165 /* Sources */,
 				8F9551B729CEDB910007F165 /* Frameworks */,
 				8F9551B829CEDB910007F165 /* Resources */,
+				8FFD970C29E00707000BAD37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
