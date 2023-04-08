@@ -11,11 +11,20 @@ import EssentialFeediOS
 
 class SceneDelegateTests: XCTestCase {
     
-    func test_sceneWillConnectToSession_configuresRootViewController() {
-        let sut = SceneDelegate()
-        sut.window = UIWindow()
+    func test_configureWindow_setsWindowAsKeyAndVisible() {
+        let window = UIWindowSpy()
+        let sut = SceneDelegate(window: window)
         
-        sut.configureWindow()
+        sut.configureWindow(window)
+        
+        XCTAssertEqual(window.makeKeyAndVisibleCallCount, 1, "Expected the window to be set as key and visible once")
+    }
+    
+    func test_configureWindow_configuresRootViewController() {
+        let window = UIWindow()
+        let sut = SceneDelegate(window: window)
+        
+        sut.configureWindow(window)
         
         let root = sut.window?.rootViewController
         let rootNavigation = root as? UINavigationController
@@ -25,4 +34,13 @@ class SceneDelegateTests: XCTestCase {
         XCTAssertTrue(topController is FeedViewController, "Expected a feed controller as top view controller, got \(String(describing: topController)) instead")
     }
     
+    // MARK: - Helpers
+    
+    private class UIWindowSpy: UIWindow {
+        var makeKeyAndVisibleCallCount = 0
+        
+        override func makeKeyAndVisible() {
+            makeKeyAndVisibleCallCount += 1
+        }
+    }
 }
