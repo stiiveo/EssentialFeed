@@ -1,6 +1,7 @@
 # Essential Feed App – Image Feed Feature
 
-[![Build Status](https://app.bitrise.io/app/7025203c814c8e82/status.svg?token=23rAcHQD5EtB65DRnoQ97w&branch=main)](https://app.bitrise.io/app/7025203c814c8e82)
+![CI-iOS Workflow Status](https://github.com/stiiveo/EssentialFeed/workflows/CI-iOS/badge.svg)
+![CI-macOS Workflow Status](https://github.com/stiiveo/EssentialFeed/workflows/CI-macOS/badge.svg)
 
 ## BDD Specs
 
