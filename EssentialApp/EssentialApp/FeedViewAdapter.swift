@@ -14,8 +14,8 @@ final class FeedViewAdapter: FeedView {
     private weak var controller: FeedViewController?
     private let imageLoader: FeedImageDataLoader
     
-    init(feedController: FeedViewController, imageLoader: FeedImageDataLoader) {
-        self.controller = feedController
+    init(controller: FeedViewController, imageLoader: FeedImageDataLoader) {
+        self.controller = controller
         self.imageLoader = imageLoader
     }
     
