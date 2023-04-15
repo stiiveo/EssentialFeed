@@ -354,6 +354,23 @@
 			path = "Shared API Infra";
 			sourceTree = "<group>";
 		};
+		8F13F3D029EA7A7000659E56 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				8F13F3C329EA65EB00659E56 /* RemoteImageCommentsLoader.swift */,
+				8F13F3C529EA677B00659E56 /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		8F13F3D129EA7AA400659E56 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				8F13F3C129EA63B600659E56 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		8F3AFDB9297F718100BDF402 /* EssentialFeedAPIEndToEndTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,7 +409,6 @@
 			isa = PBXGroup;
 			children = (
 				8F9F4ECA28E98A980025930E /* LoadFeedFromRemoteUseCaseTests.swift */,
-				8F13F3C129EA63B600659E56 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 				8F4D201829CAD90C004EE71A /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				8F992750298365DD00782583 /* RemoteFeedLoaderTests+Helpers.swift */,
 			);
@@ -406,8 +422,6 @@
 				8F65F8D928EB1635003D5B4F /* RemoteFeedLoader.swift */,
 				8F651FCB297D732200951DD5 /* FeedItemMapper.swift */,
 				8FD8E73C298A48A100DD6F25 /* RemoteFeedItem.swift */,
-				8F13F3C329EA65EB00659E56 /* RemoteImageCommentsLoader.swift */,
-				8F13F3C529EA677B00659E56 /* ImageCommentsMapper.swift */,
 				8FD6071529CBFC5000483514 /* RemoteFeedImageDataLoader.swift */,
 			);
 			path = "Feed API";
@@ -492,6 +506,7 @@
 				8F13F3CA29EA78EC00659E56 /* Shared API */,
 				8F13F3CB29EA792600659E56 /* Shared API Infra */,
 				8F13F3C729EA6EB400659E56 /* Image Comments Feature */,
+				8F13F3D029EA7A7000659E56 /* Image Comments API */,
 				8F65F8D828EB1620003D5B4F /* Feed API */,
 				8FE98FA129896BCF000FCD6F /* Feed Cache */,
 				8F9F4EC928E984880025930E /* Feed Feature */,
@@ -505,6 +520,7 @@
 			children = (
 				8F13F3CC29EA794600659E56 /* Shared API */,
 				8F13F3CF29EA798300659E56 /* Shared API Infra */,
+				8F13F3D129EA7AA400659E56 /* Image Comments API */,
 				8F651FCD297D7BDD00951DD5 /* Feed API */,
 				8FED7D8C2983C36800A4EDAA /* Feed Cache */,
 				8F6D218529C88701005DF734 /* Feed Presentation */,
