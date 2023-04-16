@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         try! CoreDataFeedStore(
             storeURL: NSPersistentContainer
                 .defaultDirectoryURL()
-                .appending(component: "feed-store.sqlite"))
+                .appendingPathComponent("feed-store.sqlite"))
     }()
     
     private let url = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!
