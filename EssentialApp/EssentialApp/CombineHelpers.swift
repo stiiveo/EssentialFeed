@@ -122,3 +122,4 @@ extension DispatchQueue {
     }
 }
 
+extension RemoteLoader: FeedLoader where Resource == [FeedImage] {}
