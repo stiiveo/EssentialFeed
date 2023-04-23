@@ -40,7 +40,7 @@ public final class FeedPresenter {
     }
     
     public func didFinishLoadingFeed(with feed: [FeedImage]) {
-        feedView.display(FeedViewModel(title: "My Feed", feed: feed))
+        feedView.display(FeedViewModel(feed: feed))
         loadingView.display(ResourceLoadingViewModel(isLoading: false))
     }
     

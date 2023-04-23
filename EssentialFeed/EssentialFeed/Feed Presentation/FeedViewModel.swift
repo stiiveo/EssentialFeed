@@ -6,6 +6,5 @@
 //
 
 public struct FeedViewModel {
-    public let title: String
     public let feed: [FeedImage]
 }
