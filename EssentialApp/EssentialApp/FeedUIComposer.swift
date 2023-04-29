@@ -46,3 +46,7 @@ public final class FeedUIComposer {
         return feedController
     }
 }
+
+protocol A {}
+protocol B {}
+class TestClass: A, B {}
