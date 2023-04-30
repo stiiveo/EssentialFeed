@@ -327,7 +327,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(sut.errorMessage, nil)
     }
     
-    func test_errorMessage_dismissesErrorMessageOnTap() {
+    func test_tapOnErrorView_hidesErrorView() {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
@@ -342,7 +342,7 @@ final class FeedUIIntegrationTests: XCTestCase {
     
     // MARK: - Helper
     
-    private func makeSUT(currentDate: @escaping () -> Date = Date.init, file: StaticString = #filePath, line: UInt = #line) -> (sut: FeedViewController, loader: LoaderSpy) {
+    private func makeSUT(currentDate: @escaping () -> Date = Date.init, file: StaticString = #filePath, line: UInt = #line) -> (sut: ListViewController, loader: LoaderSpy) {
         let loader = LoaderSpy()
         let sut = FeedUIComposer.feedComposedWith(feedLoader: loader.loadPublisher, imageLoader: loader.loadImageDataPublisher)
         trackForMemoryLeaks(loader, file: file, line: line)
