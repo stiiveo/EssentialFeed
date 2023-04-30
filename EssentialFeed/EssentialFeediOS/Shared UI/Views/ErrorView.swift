@@ -8,9 +8,8 @@
 import UIKit
 
 public final class ErrorView: UIButton {
-    
     public var message: String? {
-        get { isVisible ? title : nil }
+        get { isVisible ? configuration?.title : nil }
         set { setMessageAnimated(newValue) }
     }
     
@@ -18,7 +17,6 @@ public final class ErrorView: UIButton {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configure()
     }
     
@@ -26,20 +24,31 @@ public final class ErrorView: UIButton {
         super.init(coder: coder)
     }
     
+    private var titleAttributes: AttributeContainer {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = NSTextAlignment.center
+        
+        var attributes = AttributeContainer()
+        attributes.paragraphStyle = paragraphStyle
+        attributes.font = UIFont.preferredFont(forTextStyle: .body)
+        return attributes
+    }
+    
     private func configure() {
-        backgroundColor = .errorBackgroundColor
-        configureButton()
+        var configuration = Configuration.plain()
+        configuration.titlePadding = 0
+        configuration.baseForegroundColor = .white
+        configuration.background.backgroundColor = .errorBackgroundColor
+        configuration.background.cornerRadius = 0
+        self.configuration = configuration
+        
+        addTarget(self, action: #selector(hideMessageAnimated), for: .touchUpInside)
+        
         hideMessage()
     }
     
-    private func configureButton() {
-        setTitleColor(.white, for: .normal)
-        titleLabel?.textAlignment = .center
-        titleLabel?.numberOfLines = 0
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-        titleLabel?.adjustsFontForContentSizeCategory = true
-        
-        addTarget(self, action: #selector(hideMessageAnimated), for: .touchUpInside)
+    private var isVisible: Bool {
+        return alpha > 0
     }
     
     private func setMessageAnimated(_ message: String?) {
@@ -51,8 +60,9 @@ public final class ErrorView: UIButton {
     }
     
     private func showAnimated(_ message: String) {
-        title = message
-        contentEdgeInsets = .init(top: 8, left: 8, bottom: 8, right: 8)
+        configuration?.attributedTitle = AttributedString(message, attributes: titleAttributes)
+        
+        configuration?.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         
         UIView.animate(withDuration: 0.25) {
             self.alpha = 1
@@ -69,24 +79,12 @@ public final class ErrorView: UIButton {
     }
     
     private func hideMessage() {
-        title = nil
         alpha = 0
-        contentEdgeInsets = .init(top: -2.5, left: 0, bottom: -2.5, right: 0)
+        configuration?.attributedTitle = nil
+        configuration?.contentInsets = .zero
         onHide?()
     }
-    
-    // MARK: - Helpers
-    
-    private var title: String? {
-        get { title(for: .normal) }
-        set { setTitle(newValue, for: .normal) }
-    }
-    
-    private var isVisible: Bool {
-        return alpha > 0
-    }
 }
-
 extension UIColor {
     static var errorBackgroundColor: UIColor {
         UIColor(red: 0.99951404330000004, green: 0.41759261489999999, blue: 0.4154433012, alpha: 1)
