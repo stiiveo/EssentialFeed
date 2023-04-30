@@ -18,14 +18,18 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     }()
     
     public var onRefresh: (() -> Void)?
-
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
+        refresh()
+    }
+    
+    private func configureTableView() {
         dataSource.defaultRowAnimation = .fade
         tableView.dataSource = dataSource
         configureErrorView()
-        refresh()
     }
     
     private func configureErrorView() {
