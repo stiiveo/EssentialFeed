@@ -14,7 +14,7 @@ extension ListViewController {
     }
     
     func simulateTapOnErrorView() {
-        errorView?.button.simulateTap()
+        errorView.simulateTap()
     }
     
     @discardableResult
@@ -69,7 +69,7 @@ extension ListViewController {
     }
     
     var errorMessage: String? {
-        return errorView?.message
+        return errorView.message
     }
     
     private var feedImagesSection: Int {
