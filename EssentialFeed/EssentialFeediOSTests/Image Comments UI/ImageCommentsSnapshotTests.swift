@@ -17,7 +17,7 @@ class ImageCommentsSnapshotTests: XCTestCase {
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "IMAGE_COMMENTS_light")
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "IMAGE_COMMENTS_dark")
     }
-
+    
     // MARK: - Helpers
     
     private func makeSUT() -> ListViewController {
@@ -29,8 +29,12 @@ class ImageCommentsSnapshotTests: XCTestCase {
         controller.tableView.showsHorizontalScrollIndicator = false
         return controller
     }
-
+    
     private func comments() -> [CellController] {
+        commentsControllers().map { CellController($0) }
+    }
+    
+    private func commentsControllers() -> [ImageCommentCellController] {
         return [
             ImageCommentCellController(
                 model: ImageCommentViewModel(
@@ -52,5 +56,4 @@ class ImageCommentsSnapshotTests: XCTestCase {
             )
         ]
     }
-
 }
