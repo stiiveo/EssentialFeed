@@ -21,12 +21,4 @@ public class ImageCommentCellController: CellController {
         cell.messageLabel.text = model.message
         return cell
     }
-    
-    public func preload() {
-        
-    }
-    
-    public func cancelLoad() {
-        
-    }
 }
