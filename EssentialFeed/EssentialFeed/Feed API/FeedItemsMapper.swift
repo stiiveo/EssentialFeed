@@ -1,5 +1,5 @@
 //
-//  FeedItemMapper.swift
+//  FeedItemsMapper.swift
 //  EssentialFeed
 //
 //  Created by Jason Ou on 2023/1/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class FeedItemMapper {
+public final class FeedItemsMapper {
 	
 	private struct Root: Decodable {
 		private let items: [RemoteFeedItem]
