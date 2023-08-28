@@ -31,6 +31,7 @@
 		8FBE1CFA29DD217000743E46 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE1CF929DD217000743E46 /* FeedUIIntegrationTests.swift */; };
 		8FBE1CFC29DD24C900743E46 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE1CFB29DD24C900743E46 /* FeedAcceptanceTests.swift */; };
 		8FE629C129DD1B0C00019A41 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */; };
+		8FEA5BD22A9C8BD200E6E5F3 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA5BD12A9C8BD200E6E5F3 /* NullStore.swift */; };
 		8FFD970929DFFAEF000BAD37 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD970829DFFAEF000BAD37 /* UIView+TestHelpers.swift */; };
 		8FFD970A29E00707000BAD37 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F229CEDD3E0007F165 /* EssentialFeed.framework */; };
 		8FFD970B29E00707000BAD37 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9551F229CEDD3E0007F165 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -95,6 +96,7 @@
 		8FBE1CF929DD217000743E46 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		8FBE1CFB29DD24C900743E46 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		8FE629C029DD1B0C00019A41 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
+		8FEA5BD12A9C8BD200E6E5F3 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		8FFD970829DFFAEF000BAD37 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 				8F9551CB29CEDB920007F165 /* Info.plist */,
 				8F9551BD29CEDB910007F165 /* AppDelegate.swift */,
 				8F9551BF29CEDB910007F165 /* SceneDelegate.swift */,
+				8FEA5BD12A9C8BD200E6E5F3 /* NullStore.swift */,
 				8FBD4FBA29E9A64000D16FBA /* CombineHelpers.swift */,
 				8FBE1CDC29DD20ED00743E46 /* LoadResourcePresentationAdapter.swift */,
 				8FBE1CDE29DD20ED00743E46 /* FeedUIComposer.swift */,
@@ -301,6 +304,7 @@
 				8F9551BE29CEDB910007F165 /* AppDelegate.swift in Sources */,
 				8FBE1CE229DD20ED00743E46 /* FeedUIComposer.swift in Sources */,
 				8FBE1CE529DD20ED00743E46 /* FeedViewAdapter.swift in Sources */,
+				8FEA5BD22A9C8BD200E6E5F3 /* NullStore.swift in Sources */,
 				8F71A8A32A0767C400795DE2 /* CommentUIComposer.swift in Sources */,
 				8F9551C029CEDB910007F165 /* SceneDelegate.swift in Sources */,
 				8FBE1CE329DD20ED00743E46 /* LoadResourcePresentationAdapter.swift in Sources */,
