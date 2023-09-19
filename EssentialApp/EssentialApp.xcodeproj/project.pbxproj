@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6E64A72AB93D15008AD14E /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E64A62AB93D15008AD14E /* InMemoryFeedStore.swift */; };
 		8F71A8A12A07648D00795DE2 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71A8A02A07648D00795DE2 /* CommentsUIIntegrationTests.swift */; };
 		8F71A8A32A0767C400795DE2 /* CommentUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71A8A22A0767C400795DE2 /* CommentUIComposer.swift */; };
 		8F9551BE29CEDB910007F165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9551BD29CEDB910007F165 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F6E64A62AB93D15008AD14E /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		8F71A8A02A07648D00795DE2 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		8F71A8A22A0767C400795DE2 /* CommentUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentUIComposer.swift; sourceTree = "<group>"; };
 		8F9551BA29CEDB910007F165 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 				8FBE1CEC29DD213F00743E46 /* UIRefreshControl+TestHelpers.swift */,
 				8FFD970829DFFAEF000BAD37 /* UIView+TestHelpers.swift */,
 				8F9551FF29CFF2900007F165 /* XCTestCase+MemoryLeakTracking.swift */,
+				8F6E64A62AB93D15008AD14E /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				8FBE1CF429DD213F00743E46 /* ListViewController+TestHelpers.swift in Sources */,
 				8F95520229CFF3110007F165 /* SharedTestHelpers.swift in Sources */,
 				8FBE1CF629DD213F00743E46 /* FeedViewControllerTests+Assertions.swift in Sources */,
+				8F6E64A72AB93D15008AD14E /* InMemoryFeedStore.swift in Sources */,
 				8FBE1CF029DD213F00743E46 /* UIControl+TestHelpers.swift in Sources */,
 				8FE629C129DD1B0C00019A41 /* SceneDelegateTests.swift in Sources */,
 				8FBE1CF329DD213F00743E46 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
