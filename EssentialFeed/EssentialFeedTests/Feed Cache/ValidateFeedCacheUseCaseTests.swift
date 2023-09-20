@@ -115,7 +115,7 @@ class ValidateFeedCacheUseCaseTests: XCTestCase {
         let nonExpiredTimestamp = fixedCurrentDate.minusFeedCacheMaxAge().adding(seconds: 1)
         let (sut, store) = makeSUT(currentDate: { fixedCurrentDate })
         
-        sut.save(feed.models) { _ in }
+        try? sut.save(feed.models)
         
         expect(sut, toCompleteWith: .success(()), when: {
             store.completeRetrieval(with: feed.local, timestamp: nonExpiredTimestamp)
